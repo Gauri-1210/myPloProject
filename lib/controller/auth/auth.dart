@@ -14,6 +14,7 @@ class AuthController with ChangeNotifier {
     print(requestData);
     if (!await checkInternetAvailableOrNot()) {
       AlertDialogBox.showSnackBar("No Internet Connection", context);
+      print("hellooo");
       return;
     } else {
       try {
